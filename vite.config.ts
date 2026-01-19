@@ -4,8 +4,9 @@ import { tanstackRouter } from "@tanstack/router-vite-plugin";
 import path from "path";
 
 export default defineConfig({
+   base: "/", 
   plugins: [
-    tanstackRouter(), // 👈 MUST be first
+    tanstackRouter(), 
     react(),
   ],
   resolve: {
